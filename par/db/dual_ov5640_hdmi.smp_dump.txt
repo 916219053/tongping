@@ -1,0 +1,59 @@
+
+State Machine - |dual_ov5640_hdmi|sd_ctrl:sd_ctrl_inst|sd_read:sd_read_inst|state
+Name state.CMD17_ACK state.RD_DATA state.SEND_CMD17 state.IDLE state.RD_END 
+state.IDLE 0 0 0 0 0 
+state.SEND_CMD17 0 0 1 1 0 
+state.RD_DATA 0 1 0 1 0 
+state.CMD17_ACK 1 0 0 1 0 
+state.RD_END 0 0 0 1 1 
+
+State Machine - |dual_ov5640_hdmi|sd_ctrl:sd_ctrl_inst|sd_write:sd_write_inst|state
+Name state.WR_END state.WR_BUSY state.CMD24_ACK state.WR_DATA state.SEND_CMD24 state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.SEND_CMD24 0 0 0 0 1 1 
+state.WR_DATA 0 0 0 1 0 1 
+state.CMD24_ACK 0 0 1 0 0 1 
+state.WR_BUSY 0 1 0 0 0 1 
+state.WR_END 1 0 0 0 0 1 
+
+State Machine - |dual_ov5640_hdmi|sd_ctrl:sd_ctrl_inst|sd_init:sd_init_inst|state
+Name state.INIT_END state.ACMD41_ACK state.SEND_CMD55 state.CMD8_ACK state.CMD55_ACK state.SEND_ACMD41 state.CMD0_ACK state.SEND_CMD8 state.SEND_CMD0 state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 
+state.SEND_CMD0 0 0 0 0 0 0 0 0 1 1 
+state.SEND_CMD8 0 0 0 0 0 0 0 1 0 1 
+state.CMD0_ACK 0 0 0 0 0 0 1 0 0 1 
+state.SEND_ACMD41 0 0 0 0 0 1 0 0 0 1 
+state.CMD55_ACK 0 0 0 0 1 0 0 0 0 1 
+state.CMD8_ACK 0 0 0 1 0 0 0 0 0 1 
+state.SEND_CMD55 0 0 1 0 0 0 0 0 0 1 
+state.ACMD41_ACK 0 1 0 0 0 0 0 0 0 1 
+state.INIT_END 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dual_ov5640_hdmi|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|state
+Name state.rd_keep state.wr_keep state.sdram_done state.idle 
+state.idle 0 0 0 0 
+state.sdram_done 0 0 1 1 
+state.wr_keep 0 1 0 1 
+state.rd_keep 1 0 0 1 
+
+State Machine - |dual_ov5640_hdmi|ov5640_dri:u1_ov5640_dri|i2c_dri:u_i2c_dr|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 
+
+State Machine - |dual_ov5640_hdmi|ov5640_dri:u0_ov5640_dri|i2c_dri:u_i2c_dr|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 

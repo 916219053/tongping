@@ -1,0 +1,8 @@
+Info (10281): Verilog HDL Declaration information at sd_write.v(28): object "wr_data" differs only in case from object "WR_DATA" in the same scope
+Info (10281): Verilog HDL Declaration information at sd_write.v(32): object "wr_busy" differs only in case from object "WR_BUSY" in the same scope
+Info (10281): Verilog HDL Declaration information at sd_read.v(31): object "rd_data" differs only in case from object "RD_DATA" in the same scope
+Info (10281): Verilog HDL Declaration information at sd_init.v(30): object "init_end" differs only in case from object "INIT_END" in the same scope
+Info (10281): Verilog HDL Declaration information at video_driver.v(37): object "h_disp" differs only in case from object "H_DISP" in the same scope
+Info (10281): Verilog HDL Declaration information at video_driver.v(39): object "v_disp" differs only in case from object "V_DISP" in the same scope
+Info (10281): Verilog HDL Declaration information at dual_ov5640_hdmi.v(72): object "TOTAL_H_PIXEL" differs only in case from object "total_h_pixel" in the same scope
+Info (10281): Verilog HDL Declaration information at dual_ov5640_hdmi.v(73): object "TOTAL_V_PIXEL" differs only in case from object "total_v_pixel" in the same scope

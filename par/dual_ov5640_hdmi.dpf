@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="lcd_bl" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_de" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_hs" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_vs" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_pclk" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rst" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[4]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[3]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[2]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[1]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[0]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[10]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[9]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[8]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[7]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[6]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[5]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[15]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[14]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[13]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[12]" source="Pin Planner" >
+		</pin>
+		<pin name="lcd_rgb[11]" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>
